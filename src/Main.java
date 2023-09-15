@@ -3,32 +3,24 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int matematik,fizik,kimya,turkce,tarih,muzik;
-        int ortalama;
+        int para,kdvTutarı,toplamFiyat;
 
-        System.out.print("Matematik notunu girin: ");
-        matematik = input.nextInt();
 
-        System.out.print("Fizik notunu girin: ");
-        fizik = input.nextInt();
+        System.out.print("Fiyat Giriniz: ");
+        para = input.nextInt();
 
-        System.out.print("Kimya notunu girin: ");
-        kimya = input.nextInt();
-
-        System.out.print("Turkce notunu girin: ");
-        turkce = input.nextInt();
-
-        System.out.print("Tarih notunu girin: ");
-        tarih = input.nextInt();
-
-        System.out.print("Muzik notunu girin: ");
-        muzik = input.nextInt();
-
-        ortalama = (matematik+fizik+kimya+turkce+tarih+muzik)/6 ;
-        System.out.println("Ortalamanız: "+ortalama);
-
-        int cikti = (ortalama >= 60) ? 1 :0;
-        System.out.println("Dersi Geçtiniz ");
+        if ( 0 < para && para < 1000){
+            kdvTutarı = (para/100)*18 ;
+            toplamFiyat = kdvTutarı + para;
+            System.out.println("KDV'siz Fiyat: "+para);
+            System.out.println("KDV'li Fiyat: "+toplamFiyat);
+            System.out.println("KDV Tutarı: "+kdvTutarı);
+        }else if (para > 1000) {
+            kdvTutarı = (para/100)*8 ;
+            toplamFiyat = kdvTutarı + para;
+            System.out.println("KDV'siz Fiyat: "+para);
+            System.out.println("KDV'li Fiyat: "+toplamFiyat);
+            System.out.println("KDV Tutarı: "+kdvTutarı);
+        }
     }
-
 }
