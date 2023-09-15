@@ -36,6 +36,7 @@ public class Main {
                 System.out.println("Lütfen Geçerli bir değer giriniz.");
         }
 
+        // **************** If Else Yapısı Kullanılarak Yapılmıştır *******************
        /* if (select == 1) {
             System.out.println("Toplam: "+( n1 + n2));
         }else if (select == 2) {
