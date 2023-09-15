@@ -3,11 +3,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int para,kdvTutarı,toplamFiyat;
+        double para,kdvTutarı,toplamFiyat;
 
 
         System.out.print("Fiyat Giriniz: ");
-        para = input.nextInt();
+        para = input.nextDouble();
 
         if ( 0 < para && para < 1000){
             kdvTutarı = (para/100)*18 ;
