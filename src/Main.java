@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+/************ Kullanıcıdan Sayı Alarak Döngüler Kullanılır Ve İşlem Yapar *************/
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
